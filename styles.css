@@ -1,0 +1,101 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text styles */
+body {
+    background-color: #520000;
+    font-family: Georgia, 'Times New Roman', 'serif';
+    color: #ffffff;
+}
+
+/* Style the header section */
+header {
+    background-color: #520000
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d2a100;
+}
+
+/* Style the main sections */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Create a grid for work samples */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.work-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.work-item img {
+    max-width: 100%;
+}
+
+/* Add responsive design using media queries */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Add a border to the developer's image */
+#profile-image {
+    border: 2px solid #cc9d01; 
+    border-radius: 50%; /* Apply a rounded border for circular images */
+}
